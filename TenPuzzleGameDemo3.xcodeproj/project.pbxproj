@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3688F8761B1C3C1A0039EC1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688F8751B1C3C1A0039EC1E /* AppDelegate.swift */; };
+		3688F8781B1C3C1A0039EC1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688F8771B1C3C1A0039EC1E /* ViewController.swift */; };
+		3688F87B1B1C3C1A0039EC1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3688F8791B1C3C1A0039EC1E /* Main.storyboard */; };
+		3688F87D1B1C3C1A0039EC1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3688F87C1B1C3C1A0039EC1E /* Images.xcassets */; };
+		3688F8801B1C3C1A0039EC1E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3688F87E1B1C3C1A0039EC1E /* LaunchScreen.xib */; };
+		3688F88C1B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688F88B1B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3688F8861B1C3C1A0039EC1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3688F8681B1C3C1A0039EC1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3688F86F1B1C3C1A0039EC1E;
+			remoteInfo = TenPuzzleGameDemo3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3688F8701B1C3C1A0039EC1E /* TenPuzzleGameDemo3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenPuzzleGameDemo3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3688F8741B1C3C1A0039EC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3688F8751B1C3C1A0039EC1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3688F8771B1C3C1A0039EC1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3688F87A1B1C3C1A0039EC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3688F87C1B1C3C1A0039EC1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3688F87F1B1C3C1A0039EC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3688F8851B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenPuzzleGameDemo3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3688F88A1B1C3C1A0039EC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3688F88B1B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenPuzzleGameDemo3Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3688F86D1B1C3C1A0039EC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3688F8821B1C3C1A0039EC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3688F8671B1C3C1A0039EC1E = {
+			isa = PBXGroup;
+			children = (
+				3688F8721B1C3C1A0039EC1E /* TenPuzzleGameDemo3 */,
+				3688F8881B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests */,
+				3688F8711B1C3C1A0039EC1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3688F8711B1C3C1A0039EC1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3688F8701B1C3C1A0039EC1E /* TenPuzzleGameDemo3.app */,
+				3688F8851B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3688F8721B1C3C1A0039EC1E /* TenPuzzleGameDemo3 */ = {
+			isa = PBXGroup;
+			children = (
+				3688F8751B1C3C1A0039EC1E /* AppDelegate.swift */,
+				3688F8771B1C3C1A0039EC1E /* ViewController.swift */,
+				3688F8791B1C3C1A0039EC1E /* Main.storyboard */,
+				3688F87C1B1C3C1A0039EC1E /* Images.xcassets */,
+				3688F87E1B1C3C1A0039EC1E /* LaunchScreen.xib */,
+				3688F8731B1C3C1A0039EC1E /* Supporting Files */,
+			);
+			path = TenPuzzleGameDemo3;
+			sourceTree = "<group>";
+		};
+		3688F8731B1C3C1A0039EC1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3688F8741B1C3C1A0039EC1E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3688F8881B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3688F88B1B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests.swift */,
+				3688F8891B1C3C1A0039EC1E /* Supporting Files */,
+			);
+			path = TenPuzzleGameDemo3Tests;
+			sourceTree = "<group>";
+		};
+		3688F8891B1C3C1A0039EC1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3688F88A1B1C3C1A0039EC1E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3688F86F1B1C3C1A0039EC1E /* TenPuzzleGameDemo3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3688F88F1B1C3C1A0039EC1E /* Build configuration list for PBXNativeTarget "TenPuzzleGameDemo3" */;
+			buildPhases = (
+				3688F86C1B1C3C1A0039EC1E /* Sources */,
+				3688F86D1B1C3C1A0039EC1E /* Frameworks */,
+				3688F86E1B1C3C1A0039EC1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TenPuzzleGameDemo3;
+			productName = TenPuzzleGameDemo3;
+			productReference = 3688F8701B1C3C1A0039EC1E /* TenPuzzleGameDemo3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3688F8841B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3688F8921B1C3C1A0039EC1E /* Build configuration list for PBXNativeTarget "TenPuzzleGameDemo3Tests" */;
+			buildPhases = (
+				3688F8811B1C3C1A0039EC1E /* Sources */,
+				3688F8821B1C3C1A0039EC1E /* Frameworks */,
+				3688F8831B1C3C1A0039EC1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3688F8871B1C3C1A0039EC1E /* PBXTargetDependency */,
+			);
+			name = TenPuzzleGameDemo3Tests;
+			productName = TenPuzzleGameDemo3Tests;
+			productReference = 3688F8851B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3688F8681B1C3C1A0039EC1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Masaki Horimoto";
+				TargetAttributes = {
+					3688F86F1B1C3C1A0039EC1E = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					3688F8841B1C3C1A0039EC1E = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 3688F86F1B1C3C1A0039EC1E;
+					};
+				};
+			};
+			buildConfigurationList = 3688F86B1B1C3C1A0039EC1E /* Build configuration list for PBXProject "TenPuzzleGameDemo3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3688F8671B1C3C1A0039EC1E;
+			productRefGroup = 3688F8711B1C3C1A0039EC1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3688F86F1B1C3C1A0039EC1E /* TenPuzzleGameDemo3 */,
+				3688F8841B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3688F86E1B1C3C1A0039EC1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3688F87B1B1C3C1A0039EC1E /* Main.storyboard in Resources */,
+				3688F8801B1C3C1A0039EC1E /* LaunchScreen.xib in Resources */,
+				3688F87D1B1C3C1A0039EC1E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3688F8831B1C3C1A0039EC1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3688F86C1B1C3C1A0039EC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3688F8781B1C3C1A0039EC1E /* ViewController.swift in Sources */,
+				3688F8761B1C3C1A0039EC1E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3688F8811B1C3C1A0039EC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3688F88C1B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3688F8871B1C3C1A0039EC1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3688F86F1B1C3C1A0039EC1E /* TenPuzzleGameDemo3 */;
+			targetProxy = 3688F8861B1C3C1A0039EC1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3688F8791B1C3C1A0039EC1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3688F87A1B1C3C1A0039EC1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3688F87E1B1C3C1A0039EC1E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3688F87F1B1C3C1A0039EC1E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3688F88D1B1C3C1A0039EC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3688F88E1B1C3C1A0039EC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3688F8901B1C3C1A0039EC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TenPuzzleGameDemo3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3688F8911B1C3C1A0039EC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TenPuzzleGameDemo3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3688F8931B1C3C1A0039EC1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TenPuzzleGameDemo3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TenPuzzleGameDemo3.app/TenPuzzleGameDemo3";
+			};
+			name = Debug;
+		};
+		3688F8941B1C3C1A0039EC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TenPuzzleGameDemo3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TenPuzzleGameDemo3.app/TenPuzzleGameDemo3";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3688F86B1B1C3C1A0039EC1E /* Build configuration list for PBXProject "TenPuzzleGameDemo3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3688F88D1B1C3C1A0039EC1E /* Debug */,
+				3688F88E1B1C3C1A0039EC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3688F88F1B1C3C1A0039EC1E /* Build configuration list for PBXNativeTarget "TenPuzzleGameDemo3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3688F8901B1C3C1A0039EC1E /* Debug */,
+				3688F8911B1C3C1A0039EC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3688F8921B1C3C1A0039EC1E /* Build configuration list for PBXNativeTarget "TenPuzzleGameDemo3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3688F8931B1C3C1A0039EC1E /* Debug */,
+				3688F8941B1C3C1A0039EC1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3688F8681B1C3C1A0039EC1E /* Project object */;
+}
