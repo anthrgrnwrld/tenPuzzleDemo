@@ -621,8 +621,17 @@ class ViewController: UIViewController {
             var calcValueArray: [Int] = [-1,-1,-1,-1,-1]
             calcValueArray = makeCalcValueArray()   //valueViewArrayを計算に使い易い形に直す
             let token = getToken(calcValueArray)    //逆ポーランド記法に変換のため、まず式のtokenを取得
-            
-            let exp = reduce(token, "", +)
+            let token2:[String] = token.map(){
+                switch $0 {
+                case "×":
+                    return "*"
+                case "÷":
+                    return "/"
+                default:
+                    return $0
+                }
+            }
+            let exp = reduce(token2, "", +)
             let expression = NSExpression(format: exp)
             if let calcResult = expression.expressionValueWithObject(nil, context: nil) as? NSNumber {
                 if calcResult.floatValue == 10 {
