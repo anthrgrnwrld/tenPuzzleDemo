@@ -1,25 +1,241 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TenPuzzleGameDemo3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3eX-g4-4Tv" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="25" y="270" width="36" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O1m-XF-fpH" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="92" y="270" width="36" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hRo-v7-1Vs" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="157" y="270" width="36" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0f-dG-bx3" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="223" y="270" width="36" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="66L-NS-JJ8" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="295" y="261" width="18" height="54"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NfK-Cm-aDa" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="331" y="261" width="18" height="54"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wHh-iz-aKu" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="25" y="270" width="36" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G99-AX-16N" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="92" y="270" width="36" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9P-ms-52K" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="157" y="270" width="36" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ug-V5-9k8" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="223" y="270" width="36" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BHa-wi-D5W" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="295" y="261" width="18" height="54"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9a-g7-Pav" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="331" y="261" width="18" height="54"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YOw-cE-xss">
+                                <rect key="frame" x="25" y="155" width="54" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8iB-wP-8jJ">
+                                <rect key="frame" x="115" y="155" width="54" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tO2-Vf-B3r">
+                                <rect key="frame" x="205" y="155" width="54" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="waT-oL-HEx">
+                                <rect key="frame" x="295" y="155" width="54" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="24c-af-dXo">
+                                <rect key="frame" x="25" y="389" width="54" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r4I-6b-mYQ">
+                                <rect key="frame" x="115" y="389" width="54" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uuq-Ve-6PF">
+                                <rect key="frame" x="205" y="389" width="54" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gQ-UK-xWk">
+                                <rect key="frame" x="295" y="389" width="54" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="74f-zY-FiW" customClass="ValueImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="25" y="155" width="54" height="54"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ant-Oq-cEp" customClass="ValueImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="115" y="155" width="54" height="54"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ud5-c7-62t" customClass="ValueImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="205" y="155" width="54" height="54"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ltu-54-MDd" customClass="ValueImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="295" y="155" width="54" height="54"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkA-64-Dmc">
+                                <rect key="frame" x="79" y="398" width="36" height="36"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.40392156862745099" blue="0.59607843137254901" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jVu-oC-T1J">
+                                <rect key="frame" x="169" y="397" width="36" height="36"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.40392156862745099" blue="0.59607843137254901" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z5V-gn-oTS">
+                                <rect key="frame" x="259" y="398" width="36" height="36"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.40392156862745099" blue="0.59607843137254901" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPz-H3-Rf9" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="79" y="398" width="36" height="36"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="op5-6s-4Uy" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="169" y="398" width="36" height="36"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oOH-9m-UDb" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="259" y="398" width="36" height="36"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EER-3W-LYM" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="25" y="389" width="18" height="54"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XIo-Rm-JVW" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="61" y="389" width="18" height="54"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VCR-oe-fgb" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="115" y="389" width="18" height="54"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Uw-yu-BUN" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="151" y="389" width="18" height="54"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cku-1z-MdV" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="205" y="389" width="18" height="54"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAm-yS-kcx" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="241" y="389" width="18" height="54"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="63B-xE-yPh" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="295" y="389" width="18" height="54"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cvz-vE-HBT" customClass="OperatorImageView" customModule="TenPuzzleGameDemo3" customModuleProvider="target">
+                                <rect key="frame" x="331" y="389" width="18" height="54"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="けいさんけっか" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwl-vo-MFR">
+                                <rect key="frame" x="128" y="529" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQd-WW-RaD">
+                                <rect key="frame" x="60" y="483" width="75" height="30"/>
+                                <state key="normal" title="はじめから">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressReset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Mzw-nr-Z1N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yi4-gt-RD5">
+                                <rect key="frame" x="232" y="483" width="90" height="30"/>
+                                <state key="normal" title="けいさんする">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressCalculate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="s9g-uF-2hD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Q3-4M-9Yc">
+                                <rect key="frame" x="60" y="567" width="262" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="result" destination="1Q3-4M-9Yc" id="WoR-9d-pCw"/>
+                        <outletCollection property="valueViewArray" destination="74f-zY-FiW" collectionClass="NSMutableArray" id="VJe-OK-dfz"/>
+                        <outletCollection property="valueViewArray" destination="ant-Oq-cEp" collectionClass="NSMutableArray" id="25C-6T-gdO"/>
+                        <outletCollection property="valueViewArray" destination="Ud5-c7-62t" collectionClass="NSMutableArray" id="LOE-px-g10"/>
+                        <outletCollection property="valueViewArray" destination="ltu-54-MDd" collectionClass="NSMutableArray" id="7T9-f0-FiI"/>
+                        <outletCollection property="operatorViewArray" destination="3eX-g4-4Tv" collectionClass="NSMutableArray" id="d92-we-Pmc"/>
+                        <outletCollection property="operatorViewArray" destination="O1m-XF-fpH" collectionClass="NSMutableArray" id="ejB-md-eDF"/>
+                        <outletCollection property="operatorViewArray" destination="hRo-v7-1Vs" collectionClass="NSMutableArray" id="yMJ-f7-Zn0"/>
+                        <outletCollection property="operatorViewArray" destination="Z0f-dG-bx3" collectionClass="NSMutableArray" id="LKn-x2-5eo"/>
+                        <outletCollection property="operatorCopyViewArray" destination="wHh-iz-aKu" collectionClass="NSMutableArray" id="uBT-4j-ErF"/>
+                        <outletCollection property="operatorCopyViewArray" destination="G99-AX-16N" collectionClass="NSMutableArray" id="iJn-XX-Thh"/>
+                        <outletCollection property="operatorCopyViewArray" destination="y9P-ms-52K" collectionClass="NSMutableArray" id="xyt-uc-sUJ"/>
+                        <outletCollection property="operatorCopyViewArray" destination="6Ug-V5-9k8" collectionClass="NSMutableArray" id="360-Kg-4je"/>
+                        <outletCollection property="kakkoViewArray" destination="66L-NS-JJ8" collectionClass="NSMutableArray" id="1Hj-JU-Jro"/>
+                        <outletCollection property="kakkoViewArray" destination="NfK-Cm-aDa" collectionClass="NSMutableArray" id="GZt-PO-iAh"/>
+                        <outletCollection property="kakkoCopyViewArray" destination="BHa-wi-D5W" collectionClass="NSMutableArray" id="n9r-ab-lUt"/>
+                        <outletCollection property="kakkoCopyViewArray" destination="X9a-g7-Pav" collectionClass="NSMutableArray" id="SeW-X3-dr0"/>
+                        <outletCollection property="calcOperatorViewArray" destination="YPz-H3-Rf9" collectionClass="NSMutableArray" id="BR5-fd-3qe"/>
+                        <outletCollection property="calcOperatorViewArray" destination="op5-6s-4Uy" collectionClass="NSMutableArray" id="pw9-7n-EYh"/>
+                        <outletCollection property="calcOperatorViewArray" destination="oOH-9m-UDb" collectionClass="NSMutableArray" id="kJ6-a4-Wgu"/>
+                        <outletCollection property="destinationViewArray" destination="YOw-cE-xss" collectionClass="NSMutableArray" id="pnn-mJ-Sgy"/>
+                        <outletCollection property="destinationViewArray" destination="8iB-wP-8jJ" collectionClass="NSMutableArray" id="uW8-to-qDO"/>
+                        <outletCollection property="destinationViewArray" destination="tO2-Vf-B3r" collectionClass="NSMutableArray" id="mZ1-Dw-L6H"/>
+                        <outletCollection property="destinationViewArray" destination="waT-oL-HEx" collectionClass="NSMutableArray" id="9fk-fm-Jua"/>
+                        <outletCollection property="destinationViewArray" destination="24c-af-dXo" collectionClass="NSMutableArray" id="rQe-aZ-MWv"/>
+                        <outletCollection property="destinationViewArray" destination="r4I-6b-mYQ" collectionClass="NSMutableArray" id="Ayk-Tm-H3S"/>
+                        <outletCollection property="destinationViewArray" destination="Uuq-Ve-6PF" collectionClass="NSMutableArray" id="DDi-eI-xZt"/>
+                        <outletCollection property="destinationViewArray" destination="8gQ-UK-xWk" collectionClass="NSMutableArray" id="baC-7f-Uz6"/>
+                        <outletCollection property="calcKakkoViewArray" destination="EER-3W-LYM" collectionClass="NSMutableArray" id="RGW-fV-KSW"/>
+                        <outletCollection property="calcKakkoViewArray" destination="XIo-Rm-JVW" collectionClass="NSMutableArray" id="cEq-KB-tas"/>
+                        <outletCollection property="calcKakkoViewArray" destination="VCR-oe-fgb" collectionClass="NSMutableArray" id="tYx-3w-bRY"/>
+                        <outletCollection property="calcKakkoViewArray" destination="7Uw-yu-BUN" collectionClass="NSMutableArray" id="Sqm-px-egz"/>
+                        <outletCollection property="calcKakkoViewArray" destination="Cku-1z-MdV" collectionClass="NSMutableArray" id="xae-o4-Ddw"/>
+                        <outletCollection property="calcKakkoViewArray" destination="cAm-yS-kcx" collectionClass="NSMutableArray" id="OU8-FQ-7Zu"/>
+                        <outletCollection property="calcKakkoViewArray" destination="63B-xE-yPh" collectionClass="NSMutableArray" id="thF-hp-TED"/>
+                        <outletCollection property="calcKakkoViewArray" destination="Cvz-vE-HBT" collectionClass="NSMutableArray" id="swC-ua-5vl"/>
+                        <outletCollection property="destinationOperatorViewArray" destination="fkA-64-Dmc" id="o02-oP-GCj"/>
+                        <outletCollection property="destinationOperatorViewArray" destination="jVu-oC-T1J" id="LaE-aF-I98"/>
+                        <outletCollection property="destinationOperatorViewArray" destination="z5V-gn-oTS" id="1Bw-Sg-c3q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="422.5" y="290.5"/>
         </scene>
     </scenes>
 </document>
