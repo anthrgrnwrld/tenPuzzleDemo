@@ -31,6 +31,7 @@
 		3688F8B41B1DE1A80039EC1E /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 3688F8A41B1DE1A80039EC1E /* 9.png */; };
 		3688F8B71B22B8DC0039EC1E /* transparent_(.png in Resources */ = {isa = PBXBuildFile; fileRef = 3688F8B51B22B8DC0039EC1E /* transparent_(.png */; };
 		3688F8B81B22B8DC0039EC1E /* transparent_).png in Resources */ = {isa = PBXBuildFile; fileRef = 3688F8B61B22B8DC0039EC1E /* transparent_).png */; };
+		3688F8BA1B3503250039EC1E /* tenPuzzle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3688F8B91B3503250039EC1E /* tenPuzzle.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		3688F8A41B1DE1A80039EC1E /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		3688F8B51B22B8DC0039EC1E /* transparent_(.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent_(.png"; sourceTree = "<group>"; };
 		3688F8B61B22B8DC0039EC1E /* transparent_).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent_).png"; sourceTree = "<group>"; };
+		3688F8B91B3503250039EC1E /* tenPuzzle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tenPuzzle.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				3688F8A21B1DE1A80039EC1E /* 7.png */,
 				3688F8A31B1DE1A80039EC1E /* 8.png */,
 				3688F8A41B1DE1A80039EC1E /* 9.png */,
+				3688F8B91B3503250039EC1E /* tenPuzzle.gif */,
 				3688F8741B1C3C1A0039EC1E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -264,6 +267,7 @@
 				3688F8AA1B1DE1A80039EC1E /* -.png in Resources */,
 				3688F8B41B1DE1A80039EC1E /* 9.png in Resources */,
 				3688F87D1B1C3C1A0039EC1E /* Images.xcassets in Resources */,
+				3688F8BA1B3503250039EC1E /* tenPuzzle.gif in Resources */,
 				3688F8B71B22B8DC0039EC1E /* transparent_(.png in Resources */,
 				3688F8B11B1DE1A80039EC1E /* 6.png in Resources */,
 				3688F8A91B1DE1A80039EC1E /* ×.png in Resources */,
