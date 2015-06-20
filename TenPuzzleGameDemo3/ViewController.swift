@@ -621,23 +621,11 @@ class ViewController: UIViewController {
             var calcValueArray: [Int] = [-1,-1,-1,-1,-1]
             calcValueArray = makeCalcValueArray()   //valueViewArrayを計算に使い易い形に直す
             let token = getToken(calcValueArray)    //逆ポーランド記法に変換のため、まず式のtokenを取得
-            let token2:[String] = token.map(){
-                switch $0 {
-                case "×":
-                    return "*"
-                case "÷":
-                    return "/"
-                default:
-                    return $0
-                }
-            }
-            let exp = reduce(token2, "", +)
-            let expression = NSExpression(format: exp)
-            if let calcResult = expression.expressionValueWithObject(nil, context: nil) as? NSNumber {
-                if calcResult.floatValue == 10 {
-                    result.text = "\(calcResult.floatValue)\n10ピッタリ！"
+            if let calcResult = ViewController.calc(token) {
+                if calcResult == 10 {
+                    result.text = "\(calcResult)\n10ピッタリ！"
                 }else{
-                    result.text = "\(calcResult.floatValue)\n10ピッタリを目指して下さい"
+                    result.text = "\(calcResult)\n10ピッタリを目指して下さい"
                 }
             }else{
                 result.text = "計算失敗..."
@@ -650,7 +638,25 @@ class ViewController: UIViewController {
         
     }
     
-    
+    class func calc(tokens:[String]) -> Float? {
+        let token2:[String] = tokens.map(){
+            switch $0 {
+            case "×":
+                return "*"
+            case "÷":
+                return "/"
+            default:
+                return $0
+            }
+        }
+        let exp = reduce(token2, "", +)
+        let expression = NSExpression(format: exp)
+        if let calcResult = expression.expressionValueWithObject(nil, context: nil) as? NSNumber {
+            return calcResult.floatValue
+        }else{
+            return nil
+        }
+    }
 
     //valueViewArrayを計算に使い易い形に直す
     func makeCalcValueArray() -> [Int] {

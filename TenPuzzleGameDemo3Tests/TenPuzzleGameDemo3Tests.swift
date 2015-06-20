@@ -33,4 +33,35 @@ class TenPuzzleGameDemo3Tests: XCTestCase {
         }
     }
     
+    // "+", "-", "×", "÷"
+
+    func testCalc1() {
+        let result = ViewController.calc(["1", "+", "2", "+", "3", "+", "4"])
+        XCTAssertNotNil(result)
+        XCTAssertEqual(result!, Float(10.0), "result is 20")
+    }
+    
+    func testCalc2() {
+        let result = ViewController.calc(["1", "+", "2", "×", "3", "+", "4"])
+        XCTAssertNotNil(result)
+        XCTAssertEqual(result!, Float(11.0), "result is 11")
+    }
+    
+    func testCalc3() {
+        let result = ViewController.calc(["1", "+", "2", "-", "3", "+", "4"])
+        XCTAssertNotNil(result)
+        XCTAssertEqual(result!, Float(4.0), "result is 4")
+    }
+    
+    func testCalc4() {
+        let result = ViewController.calc(["1", "+", "2.0", "÷", "3.0", "+", "4"]) // 5.6666666666
+        XCTAssertNotNil(result)
+        XCTAssertEqualWithAccuracy(result!, Float(5.666666), 0.00001, "result is 5.666666")
+    }
+    
+    func testCalc5() {
+        let result = ViewController.calc(["(", "1", "+", "2", ")", "×", "(", "3", "+", "4", ")"])
+        XCTAssertNotNil(result)
+        XCTAssertEqual(result!, Float(21.0), "result is 21")
+    }
 }
