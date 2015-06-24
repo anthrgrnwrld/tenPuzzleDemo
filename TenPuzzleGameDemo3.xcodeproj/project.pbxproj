@@ -32,6 +32,7 @@
 		3688F8B71B22B8DC0039EC1E /* transparent_(.png in Resources */ = {isa = PBXBuildFile; fileRef = 3688F8B51B22B8DC0039EC1E /* transparent_(.png */; };
 		3688F8B81B22B8DC0039EC1E /* transparent_).png in Resources */ = {isa = PBXBuildFile; fileRef = 3688F8B61B22B8DC0039EC1E /* transparent_).png */; };
 		3688F8BA1B3503250039EC1E /* tenPuzzle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3688F8B91B3503250039EC1E /* tenPuzzle.gif */; };
+		E5A670FF1B3513D2007A5A93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688F8771B1C3C1A0039EC1E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -297,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A670FF1B3513D2007A5A93 /* ViewController.swift in Sources */,
 				3688F88C1B1C3C1A0039EC1E /* TenPuzzleGameDemo3Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

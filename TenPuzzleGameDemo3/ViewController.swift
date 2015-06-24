@@ -621,19 +621,15 @@ class ViewController: UIViewController {
             var calcValueArray: [Int] = [-1,-1,-1,-1,-1]
             calcValueArray = makeCalcValueArray()   //valueViewArrayを計算に使い易い形に直す
             let token = getToken(calcValueArray)    //逆ポーランド記法に変換のため、まず式のtokenを取得
-            
-            var rpnBuffer = changeRpnWithToken(token)   //tokenから逆ポーランド記法に変換
-            let (ret, err) = calculateRPN(rpnBuffer)    //逆ポーランド記法を計算
-            
-            if err {
-                result.text = "エラー！！\nわりざんのつかいかたにちゅうい"
-            } else if ret == 10 {
-                result.text = "\(ret)\nおめでとう！１０ピッタリです！"
-            } else {
-                result.text = "\(ret)\n１０ピッタリをめざしてください"
+            if let calcResult = ViewController.calc(token) {
+                if calcResult == 10 {
+                    result.text = "\(calcResult)\n10ピッタリ！"
+                }else{
+                    result.text = "\(calcResult)\n10ピッタリを目指して下さい"
+                }
+            }else{
+                result.text = "計算失敗..."
             }
-            
-            
         } else {
             if canCalc1 == false {result.text = "けいさんできません\nすうじをすべてつかいましょう"}
             else if canCalc2 == false {result.text = "けいさんできません\nキゴウをすべてうめましょう"}
@@ -642,7 +638,25 @@ class ViewController: UIViewController {
         
     }
     
-    
+    class func calc(tokens:[String]) -> Float? {
+        let token2:[String] = tokens.map(){
+            switch $0 {
+            case "×":
+                return "*"
+            case "÷":
+                return "/"
+            default:
+                return $0
+            }
+        }
+        let exp = reduce(token2, "", +)
+        let expression = NSExpression(format: exp)
+        if let calcResult = expression.expressionValueWithObject(nil, context: nil) as? NSNumber {
+            return calcResult.floatValue
+        }else{
+            return nil
+        }
+    }
 
     //valueViewArrayを計算に使い易い形に直す
     func makeCalcValueArray() -> [Int] {
@@ -711,142 +725,5 @@ class ViewController: UIViewController {
         return token
         
     }
-    
-    //逆ポーランド記法への変換関数 [参考URL]("http://www.gg.e-mansion.com/~kkatoh/program/novel2/novel208.html")
-    func changeRpnWithToken(rpnToken: [String]) -> [String] {
-        
-        var rpnBuffer: [String] = []
-        var rpnStack: [String] = []
-        var kakkoFlag: Bool = false
-        let operatorPriorityDict: Dictionary = ["+": 0, "-": 0, "×": 1, "÷": 1]
-        
-        for (index, val) in enumerate(rpnToken) {
-
-            //1. 数字であれば、TokenをBufferに追加
-            if rpnToken[index] >= "0" && rpnToken[index] <= "9" {rpnBuffer.append(rpnToken[index])}
-                
-            //2. ")"であれば、Stackのlastから"("直前までBufferへ   "("は捨てる -> ループ終了
-            else if rpnToken[index] == ")" {
-                for (index2, val) in enumerate(rpnStack) {
-                    
-                    if rpnStack.last != "(" {rpnBuffer.append(rpnStack[rpnStack.count - index2 - 1]); rpnStack.removeLast()}
-                    else {rpnStack.removeLast(); break}
-                    
-                }
-
-            //3. "("であれば、TokenをStackに追加
-            } else if rpnToken[index] == "(" {rpnStack.append(rpnToken[index])}
-           
-
-            //4. Other
-            else {
-
-                //4-1. Stackが空でない
-                while rpnStack.isEmpty == false {
-
-                    //4-2. Stackの最上段の演算子よりTokenの演算子の優先順位が低ければ、TokenをStackに追加 -> ループ終了
-                    if operatorPriorityDict[rpnToken[index]] > operatorPriorityDict[rpnStack.last!] {
-                        
-                        rpnStack.append(rpnToken[index])
-                        break
-
-                    //4-3. Stackの最上段の演算子よりTokenの演算子の優先順位が高いまたは同じであれば、StackをBufferに追加
-                    } else {
-
-                        rpnBuffer.append(rpnStack.last!)
-                        rpnStack.removeLast()
-                        
-                    }
-                    
-                }
-                
-                //4-4. Stackが空ならば、TokenをStackに追加
-                if rpnStack.isEmpty {rpnStack.append(rpnToken[index])}
-                
-            }
-            
-            
-        }
-
-        //5. Tokenを全て読み出した場合、空になるまでStackをBufferに追加
-        for index1 in rpnStack {
-            if rpnStack.isEmpty {break}
-            else {rpnBuffer.append(rpnStack.last!); rpnStack.removeLast()}
-        }
-        
-        return rpnBuffer
-
-    }
-
-    //逆ポーランド記法計算関数
-    func calculateRPN(var rpnBuffer: [String]) -> (Int, Bool) {
-        var ret = 0
-        var err = false
-        
-        while rpnBuffer.count > 1 {
-            for (index, val) in enumerate(rpnBuffer) {
-                
-                if rpnBuffer[index] == "+" || rpnBuffer[index] == "-" || rpnBuffer[index] == "×" || rpnBuffer[index] == "÷" {
-                    
-                    if index < 2 {err = true; return (ret, err)}
-                    
-                    (ret, err) = calculateWithOpeartor(rpnBuffer[index], paramStr1: rpnBuffer[index - 2], paramStr2: rpnBuffer[index - 1])
-                    
-                    if err {return (ret, err)}
-                    
-                    rpnBuffer.removeAtIndex(index)
-                    rpnBuffer.removeAtIndex(index - 1)
-                    rpnBuffer.removeAtIndex(index - 2)
-                    
-                    rpnBuffer.insert("\(ret)", atIndex: index - 2)
-                    
-                    break
-                    
-                    
-                }
-            }
-            
-        }
-        
-        return (ret, err)
-        
-    }
-    
-
-    //四則演算関数
-    func calculateWithOpeartor(operatorName: String, paramStr1: String, paramStr2: String) -> (Int, Bool) {
-        
-        var ret: Int? = nil
-        var err: Bool = false
-        let param1 = paramStr1.toInt()!
-        let param2 = paramStr2.toInt()!
-        
-        switch operatorName {
-        case "+":
-            ret = param1 + param2
-        case "-":
-            ret = param1 - param2
-        case "×":
-            ret = param1 * param2
-        case "÷":
-            //0除算を考慮する
-            if param2 != 0 {
-                ret = param1 / param2
-                if param1 % param2 != 0 {err = true}
-            } else {
-                ret = 0
-                err = true
-            }
-        default:
-            ret = 0
-            err = true
-        }
-        
-        if err {println("(ret, err) = (\(ret!),\(err))")}
-        
-        return (ret!, err)
-        
-    }
-    
 }
 
