@@ -624,8 +624,10 @@ class ViewController: UIViewController {
             if let calcResult = ViewController.calc(token) {
                 if calcResult == 10 {
                     result.text = "\(calcResult)\n10ピッタリ！"
-                }else{
-                    result.text = "\(calcResult)\n10ピッタリを目指して下さい"
+                } else if calcResult.isNormal {
+                    result.text = "\(calcResult)\n10ピッタリをめざしてください"
+                } else {
+                    result.text = "けいさんしっぱい...\nわりざんのつかいかたにちゅうい"
                 }
             }else{
                 result.text = "計算失敗..."
@@ -639,17 +641,8 @@ class ViewController: UIViewController {
     }
     
     class func calc(tokens:[String]) -> Float? {
-        let token2:[String] = tokens.map(){
-            switch $0 {
-            case "×":
-                return "*"
-            case "÷":
-                return "/"
-            default:
-                return $0
-            }
-        }
-        let exp = reduce(token2, "", +)
+
+        let exp = reduce(tokens, "", +)
         let expression = NSExpression(format: exp)
         if let calcResult = expression.expressionValueWithObject(nil, context: nil) as? NSNumber {
             return calcResult.floatValue
@@ -720,7 +713,23 @@ class ViewController: UIViewController {
             
             //4. 演算子を配列に追加
             if index != 3 {token.append(calcOperatorViewArray[index].operatorName)}
+            
+            
         }
+
+        token = token.map(){
+            switch $0 {
+            case "×":
+                return "*"          //四則演算用文字に変更
+            case "÷":
+                return "/"          //四則演算用文字に変更
+            case "0","1","2","3","4","5","6","7","8","9":
+                return $0 + ".0"    //小数点を含む文字列へ変更 (float型での計算のため)
+            default:
+                return $0
+            }
+        }
+        
         
         return token
         
